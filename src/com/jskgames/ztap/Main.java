@@ -2,8 +2,6 @@ package com.jskgames.ztap;
 
 import android.os.Bundle;
 import android.view.View;
-import android.view.Window;
-import android.view.WindowManager;
 import android.app.Activity;
 
 public class Main extends Activity {
