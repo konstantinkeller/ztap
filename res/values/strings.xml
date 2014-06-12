@@ -4,6 +4,7 @@
     <string name="app_name">zTap</string>
     <string name="start_button">Start Game</string>
     <string name="bg_placeholder">Insert Cool Image Here</string>
-    <string name="game_placeholder">GAME GOES HERE</string>
+    <string name="game_placeholder">GAME\nGOES\nHERE</string>
+    <string name="tap_to_start">TAP ANYWHERE TO START</string>
 
 </resources>
