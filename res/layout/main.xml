@@ -5,27 +5,6 @@
     android:background="#FF8800"
     android:orientation="vertical" >
 
-    <Button
-        android:background="@android:color/transparent"
-        android:id="@+id/start_game"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:onClick="startGame" />
-
-    <TextView
-        android:id="@+id/textView1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/title_start"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="10dp"
-        android:text="@string/tap_to_start"
-        android:textColor="#FFBB33"
-        android:textSize="25sp" />
-
     <TextView
         android:id="@+id/title_start"
         android:layout_width="wrap_content"
@@ -36,5 +15,23 @@
         android:text="@string/app_name"
         android:textColor="#FFBB33"
         android:textSize="75sp" />
+
+    <Button
+        android:id="@+id/start_game"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/title_start"
+        android:onClick="startGame"
+        android:text="@string/start_button" />
+
+    <Button
+        android:id="@+id/test_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/start_game"
+        android:onClick="enterTest"
+        android:text="@string/test_button" />
 
 </RelativeLayout>

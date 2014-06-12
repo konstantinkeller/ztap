@@ -4,11 +4,10 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
 import android.app.Activity;
-import android.content.Intent;
-import android.graphics.Typeface;
+import com.jskgames.ztap.Spawn;
+import java.util.Arrays;
 
-public class Main extends Activity {
-		
+public class Test extends Activity {
     @Override
     public void onCreate(Bundle savedInstanceState) {
     	
@@ -22,19 +21,13 @@ public class Main extends Activity {
                 | View.SYSTEM_UI_FLAG_FULLSCREEN
                 | View.SYSTEM_UI_FLAG_IMMERSIVE_STICKY);
 
-        setContentView(R.layout.main);
-        
+        setContentView(R.layout.test);
 
-    }
-        
-    public void startGame(View v) {
-    	Intent startGameIntent = new Intent(Main.this, Game.class);
-    	Main.this.startActivity(startGameIntent);
     }
     
-    public void enterTest(View v) {
-    	Intent startTestIntent = new Intent(Main.this, Test.class);
-    	Main.this.startActivity(startTestIntent);
+    public void genSeq(View v) {
+    	TextView seq = (TextView) findViewById(R.id.seq);
+    	int sequence[] = Spawn.sequenceGen(6,Spawn.randInt(1,8));
+    	seq.setText(Arrays.toString(sequence));
     }
-
 }

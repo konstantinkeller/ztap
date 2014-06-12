@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FF8800"
+    android:orientation="vertical" >
+
+    <Button
+        android:id="@+id/gen_seq"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="28dp"
+        android:layout_marginTop="25dp"
+        android:onClick="genSeq"
+        android:text="Generate Sequence" />
+
+    <TextView
+        android:id="@+id/seq_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/gen_seq"
+        android:layout_marginLeft="16dp"
+        android:text="Sequence:"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:gravity="center"
+        android:id="@+id/seq"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/seq_label"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp" />
+
+</RelativeLayout>
