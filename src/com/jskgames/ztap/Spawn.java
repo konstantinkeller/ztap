@@ -5,6 +5,7 @@ import java.util.Random;
 public class Spawn {
 	
 	static Random rand = new Random();
+	static int[] spawnArray = new int[8]; // array of enemies
 	
 	// Generates an array of integers that represents the sequence of directions
 	// for a newly generated enemy.
@@ -32,7 +33,7 @@ public class Spawn {
 		if (level % 10 == 0)
 			return 10;
 		else
-			return (level + 4);
+			return ((level % 10) + 4);
 	}
 	
 	// Movespeed of individual enemy. Will be tested further
